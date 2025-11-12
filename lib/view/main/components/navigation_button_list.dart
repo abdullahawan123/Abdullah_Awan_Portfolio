@@ -23,14 +23,13 @@ class NavigationButtonList extends StatelessWidget {
                         curve: Curves.easeIn);
                   },
                   text: 'Home'),
-              if (!Responsive.isLargeMobile(context))
-                NavigationTextButton(
-                    onTap: () {
-                      controller.animateToPage(1,
-                          duration: const Duration(milliseconds: 500),
-                          curve: Curves.easeIn);
-                    },
-                    text: 'About me'),
+              NavigationTextButton(
+                  onTap: () {
+                    controller.animateToPage(1,
+                        duration: const Duration(milliseconds: 500),
+                        curve: Curves.easeIn);
+                  },
+                  text: 'About me'),
               NavigationTextButton(
                   onTap: () {
                     controller.animateToPage(2,
